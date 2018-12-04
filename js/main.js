@@ -1,10 +1,14 @@
 $(document).ready(function() {
 
+  /*  $(window).on('load', function() {
+      $('#div3').animate({top: '+=25px'}, "slow");
+    }); */
+
     function resetAll () {
         $('.text').hide();
         $('.info').animate({width: '50px'}, "fast");
         $('.info').animate({height: '400px'}, "fast");
-        $('.info').css('background-color', 'grey');
+        $('.info').css('background-color', '#99A3A4');
         $('.hide').hide();
         $('.show').show();
     };

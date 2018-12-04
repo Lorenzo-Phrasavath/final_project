@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #000;
 }
 #flexcontainer {
   display: flex;
@@ -8,9 +8,8 @@ body {
 .info {
   height: 400px;
   width: 50px;
-  background-color: grey;
+  background-color: #99A3A4;
   margin: 1rem;
-  postion: relative;
 }
 .text {
   display: none;
