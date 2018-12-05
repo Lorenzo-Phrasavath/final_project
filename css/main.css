@@ -4,20 +4,25 @@ body {
 #flexcontainer {
   display: flex;
   justify-content: center;
+  max-width: 800px;
+  margin: auto;
 }
 .info {
   height: 400px;
   width: 50px;
   background-color: #99A3A4;
-  margin: 1rem;
+  margin: 0.5rem;
+  position: relative;
+}
+.button {
+  margin: auto;
+  display: block;
+  position: absolute;
+  bottom: 0px;
 }
 .text {
   display: none;
 }
 .hide {
   display: none;
-}
-button {
-  display: block;
-  margin: auto;
 }
