@@ -1,18 +1,60 @@
 body {
   background-color: #000;
+  font-family: 'Quattrocento', serif;
+  color: #fff;
+}
+header {
+  text-align: center;
+}
+#subheading2 {
+  display: none;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0;
+}
+img {
+  cursor: pointer;
+}
+p {
+  padding-top: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 }
 #flexcontainer {
   display: flex;
   justify-content: center;
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
+  color: #000;
 }
-.info {
+.shape {
   height: 400px;
   width: 50px;
-  background-color: #99A3A4;
-  margin: 0.5rem;
+  background-color: #FFF;
+  margin: 0;
   position: relative;
+  text-align: center;
+  border: solid;
 }
 .button {
   margin: auto;
@@ -20,9 +62,84 @@ body {
   position: absolute;
   bottom: 0px;
 }
-.text {
-  display: none;
-}
 .hide {
   display: none;
+}
+.text {
+  display: none;
+  padding: 1rem;
+  padding-top: 0rem;
+}
+.info {
+  text-align: left;
+}
+.audio {
+  display: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.icon {
+  padding-bottom: 0.5rem;
+}
+.album-cover {
+display: inline;
+}
+
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    line-height: 3rem;
+  }
+  #subheading1 {
+    display: none;
+  }
+  #subheading2 {
+    display: block;
+  }
+  #flexcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .piano-keys {
+    display: none;
+  }
+  .shape {
+    height: auto;
+    width: 370px;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+  }
+  .text {
+    display: block;
+  }
+  #dixieland {
+    background-color: #F5B041;
+  }
+  #swing {
+    background-color: #F4D03F;
+  }
+  #bebop {
+    background-color: #EC7063;
+  }
+  #cool {
+    background-color: #5DADE2;
+  }
+  #free {
+    background-color: #45B39D;
+  }
+  #fusion {
+    background-color: #DC7633;
+  }
+  #latin {
+    background-color: #58D68D;
+  }
+  #smooth {
+    background-color: #FADBD8;
+  }
+  #acid {
+    background-color: #C39BD3;
+  }
 }

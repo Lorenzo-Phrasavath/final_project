@@ -3,72 +3,479 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Final Project</title> <!--change-->
+  <title>Listen to Jazz</title> <!--change-->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
+<header>
+  <h1>Cool Cats Listen to Jazz</h1>
+  <p id="subheading1">Play the piano to learn and listen to different styles of jazz</p>
+  <p id="subheading2">Learn about the many different styles of jazz. Click to listen to examples.</p>
+</header>
+
+<!--Flex container-->
 <div id="flexcontainer">
 
-  <div id="div1" class="info">
-
-    <p id="text1" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus feugiat lacus, vel tempor lorem fermentum non. Pellentesque placerat, tortor nec venenatis cursus, urna odio tempus eros, sed sagittis ligula eros nec lacus. Donec accumsan ultrices sem, ut eleifend nisl tincidunt eu. Integer fringilla ex vel libero tempor porttitor. Nullam tincidunt augue in nulla venenatis, fermentum consequat magna scelerisque. Ut et ante efficitur, viverra ante pretium, tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus libero nec pellentesque mollis. Nulla in massa auctor, porta neque vel, posuere nulla. Etiam vitae mi in nisi tempor lobortis at non sem.</p>
-
-    <div class="button">
-      <button id="show1" class="show">show</button>
-      <button id="hide1" class="hide">hide</button>
+<!--dixieland-->
+  <div id="dixieland" class="shape">
+    <div id ="dixieland-key" class ="piano-keys">
+      <img src="images/key1.png" alt="piano key 1">
     </div>
 
-  </div>
+<!--dixiland text-->
+    <div id="dixieland-text" class="text">
+      <div id="dixieland-info" class="info">
+        <h2>Dixieland</h2>
+        <p>Sometimes referred to as <em>Classic Jazz</em> or <em>Traditional Jazz</em>, Dixieland is the original form of jazz developed in New Orleans in the early 1900s. Dixieland combines elements of African American/New Orleans ragtime as well as Sicilian music, and often features the trumpet playing the melody while other intruments improvise around it. Dixieland was the style of such greats as Louis Armstrong, King Oliver, and The Original Dixieland Jazz Band.</p>
+    </div>
+<!--dixieland audio-->
+    <audio id="music1" preload="auto">
+      <source src="audio/dixieland/original_dixieland.mp3" type="audio/mp3">
+      <source src="audio/dixieland/original_dixieland.ogg" type="audio/ogg">
+    </audio>
 
-  <div class="info"></div>
-
-  <div id="div2" class="info">
-
-    <p id="text2" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus feugiat lacus, vel tempor lorem fermentum non. Pellentesque placerat, tortor nec venenatis cursus, urna odio tempus eros, sed sagittis ligula eros nec lacus. Donec accumsan ultrices sem, ut eleifend nisl tincidunt eu. Integer fringilla ex vel libero tempor porttitor. Nullam tincidunt augue in nulla venenatis, fermentum consequat magna scelerisque. Ut et ante efficitur, viverra ante pretium, tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus libero nec pellentesque mollis. Nulla in massa auctor, porta neque vel, posuere nulla. Etiam vitae mi in nisi tempor lobortis at non sem.</p>
-
-    <div class="button">
-    <button id="show2" class="show">show</button>
-    <button id="hide2"class="hide">hide</button>
+    <div id ="original_dixieland-audio" class="audio">
+      <h3>Original Dixieland Jazz Band - Tiger Rag</h3>
+      <button id="pButton1" class="play"><img id="icon1" class="icon" src="images/play.png" alt="play"></button>
     </div>
 
+    <audio id="music2" preload="auto">
+      <source src="audio/dixieland/louis_armstrong.mp3" type="audio/mp3">
+      <source src="audio/dixieland/louis_armstrong.ogg" type="audio/ogg">
+    </audio>
 
+    <div id ="louis_armstrong-audio" class="audio">
+      <h3>Louis Armstrong - When the Saints go Marching In</h3>
+      <button id="pButton2" class="play"><img id="icon2" class="icon" src="images/play.png" alt="play"></button>
+    </div>
+<!--dixieland album covers-->
+      <div class="album-cover" id="original_dixieland-cover">
+        <img src="images/dixieland/original_dixieland.jpg" alt="Original Dixieland Band cover">
+      </div>
+      <div class="album-cover" id="louis_armstrong-cover">
+        <img src="images/dixieland/louis_armstrong.jpg" alt="Louis Armstrong Cover">
+      </div>
+<!--dixieland text closing div-->
+    </div>
+<!--dixieland buttons-->
+    <div class="button">
+        <button id="hide1" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--dixieland closing div-->
   </div>
 
-  <div class="info"></div>
 
-  <div id="div3" class="info">
 
-    <p id="text3" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus feugiat lacus, vel tempor lorem fermentum non. Pellentesque placerat, tortor nec venenatis cursus, urna odio tempus eros, sed sagittis ligula eros nec lacus. Donec accumsan ultrices sem, ut eleifend nisl tincidunt eu. Integer fringilla ex vel libero tempor porttitor. Nullam tincidunt augue in nulla venenatis, fermentum consequat magna scelerisque. Ut et ante efficitur, viverra ante pretium, tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus libero nec pellentesque mollis. Nulla in massa auctor, porta neque vel, posuere nulla. Etiam vitae mi in nisi tempor lobortis at non sem.</p>
-
-    <div class="button">
-    <button id="show3" class="show">show</button>
-    <button id="hide3"class="hide">hide</button>
+<!--swing-->
+  <div id="swing" class="shape">
+    <div id ="swing-key" class ="piano-keys">
+      <img src="images/key2.png" alt="piano key 2">
     </div>
 
+<!--swing text-->
+    <div id="swing-text" class="text">
+      <div id="swing-info" class="info">
+        <h2>Swing</h2>
+        <p>Swing was the music of the 1930s and 40s. Named after its distinct 'swing feel,' this style of jazz requires listeners to move to the music, inspiring such dances as the Jitterbug and the Lindy Hop. This era was spearheaded by big band leaders such as Benny Goodman, Duke Ellignton, and Glenn Miller.</p>
+      </div>
+<!--Swing audio-->
+    <audio id="music3" preload="auto">
+      <source src="audio/swing/benny_goodman.mp3" type="audio/mp3">
+      <source src="audio/swing/benny_goodman.ogg" type="audio/ogg">
+    </audio>
 
-  </div>
-
-  <div class="info"></div>
-
-  <div id="div4" class="info">
-
-    <p id="text4" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus feugiat lacus, vel tempor lorem fermentum non. Pellentesque placerat, tortor nec venenatis cursus, urna odio tempus eros, sed sagittis ligula eros nec lacus. Donec accumsan ultrices sem, ut eleifend nisl tincidunt eu. Integer fringilla ex vel libero tempor porttitor. Nullam tincidunt augue in nulla venenatis, fermentum consequat magna scelerisque. Ut et ante efficitur, viverra ante pretium, tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus libero nec pellentesque mollis. Nulla in massa auctor, porta neque vel, posuere nulla. Etiam vitae mi in nisi tempor lobortis at non sem.</p>
-
-    <div class="button">
-    <button id="show4" class="show">show</button>
-    <button id="hide4"class="hide">hide</button>
+    <div id ="benny_goodman-audio" class="audio">
+      <h3>Benny Goodman - Sing, Sing, Sing</h3>
+      <button id="pButton3" class="play"><img id="icon3" class="icon" src="images/play.png" alt="play"></button>
     </div>
 
+    <audio id="music4" preload="auto">
+      <source src="audio/swing/glenn_miller.mp3" type="audio/mp3">
+      <source src="audio/swing/glenn_miller.ogg" type="audio/ogg">
+    </audio>
 
+    <div id ="glenn_miller-audio" class="audio">
+      <h3>Glenn Miller - In the Mood</h3>
+      <button id="pButton4" class="play"><img id="icon4" class="icon" src="images/play.png" alt="play"></button>
+    </div>
+<!--swing album covers-->
+      <div class="album-cover" id="benny_goodman-cover">
+        <img src="images/swing/benny_goodman.jpg" alt="Benny Goodman Cover">
+      </div>
+      <div class="album-cover" id="glenn_miller-cover">
+        <img src="images/swing/glenn_miller.jpg" alt="Glenn Miller Cover">
+      </div>
+<!--Swing text closing div-->
+    </div>
+<!--Swing buttons-->
+    <div class="button">
+        <button id="hide2" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--Swing closing div-->
   </div>
+
+
+
+<!--bebop-->
+  <div id="bebop" class="shape">
+    <div id ="bebop-key" class ="piano-keys">
+      <img src="images/key3.png" alt="piano key 3">
+    </div>
+
+<!--Bebop text-->
+    <div id="bebop-text" class="text">
+      <div id="bebop-info" class="info">
+        <h2>Bebop</h2>
+        <p>Bebop emerged from Swing as a new generation of jazz musicians began experimenting with faster tempos and more complex chord progressions. Where Swing wants you to get up and dance, Bop wants you to sit and listen ot the musical genious of the performers. Bebop groups tend to be much smaller and focus more on improvisation than heavily arranged tunes. Some of the pioneers of this style include Charlie Parker, Dizzy Gillespie, Thelonious Monk, and Art Blakey.</p>
+      </div>
+<!--bebop audio-->
+      <audio id="music5" preload="auto">
+        <source src="audio/bebop/dizzy_gillespie.mp3" type="audio/mp3">
+        <source src="audio/bebop/dizzy_gillespie.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="dizzy_gillespie-audio" class="audio">
+        <h3>Dizzy Gillespie - Night in Tunisia</h3>
+        <button id="pButton5" class="play"><img id="icon5" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+
+      <audio id="music6" preload="auto">
+        <source src="audio/bebop/art_blakey.mp3" type="audio/mp3">
+        <source src="audio/bebop/art_blakey.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="art_blakey-audio" class="audio">
+        <h3>Art Blakey - Moanin'</h3>
+        <button id="pButton6" class="play"><img id="icon6" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+<!--Bebop album covers-->
+      <div class="album-cover" id="dizzy_gillespie-cover">
+        <img src="images/bebop/dizzy_gillespie.jpg" alt="Dizzy Gillespie Cover">
+      </div>
+      <div class="album-cover" id="art_blakey-cover">
+        <img src="images/bebop/art_blakey.jpg" alt="Art Blakey Cover">
+      </div>
+<!--bebop text closing div-->
+    </div>
+<!--bebop buttons-->
+    <div class="button">
+        <button id="hide3" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--bebop closing div-->
+  </div>
+
+
+
+<!--cool jazz-->
+  <div id="cool" class="shape">
+    <div id ="cool-key" class ="piano-keys">
+      <img src="images/key1.png" alt="piano key 1">
+    </div>
+
+<!--cool jazz text-->
+    <div id="cool-text" class="text">
+      <div id="cool-info" class="info">
+        <h2>Cool Jazz</h2>
+        <p>In contrast to Bebop, Cool Jazz offeres a mellower feel that features long melodic lines and occasional classical elements. Epitomized by Miles Davis' <em>Birth of the Cool</em>, Cool Jazz offers the technicality of Bebop but in a lighter and more relaxed fashion. Some of the cool jazz greats include Chet Baker, Dave Brubeck, Gil Evans, and early Miles Davis.</p>
+      </div>
+<!--cool jazz audio-->
+      <audio id="music7" preload="auto">
+        <source src="audio/cool/miles_davis.mp3" type="audio/mp3">
+        <source src="audio/cool/miles_davis.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="miles_davis-audio" class="audio">
+        <h3>Miles Davis - Boplicity</h3>
+        <button id="pButton7" class="play"><img id="icon7" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+
+      <audio id="music8" preload="auto">
+        <source src="audio/cool/chet_baker.mp3" type="audio/mp3">
+        <source src="audio/cool/chet_baker.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="chet_baker-audio" class="audio">
+        <h3>Chet Baker - Almost Blue</h3>
+        <button id="pButton8" class="play"><img id="icon8" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+<!--cool album covers-->
+      <div class="album-cover" id="miles_davis-cover">
+        <img src="images/cool/miles_davis.jpg" alt="Miles Davis Cover">
+      </div>
+      <div class="album-cover" id="chet_baker-cover">
+        <img src="images/cool/chet_baker.jpeg" alt="Chet Baker Cover">
+      </div>
+<!--cool text closing div-->
+    </div>
+<!--cool buttons-->
+    <div class="button">
+        <button id="hide4" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--cool closing div-->
+  </div>
+
+
+
+<!--free jazz-->
+  <div id="free" class="shape">
+    <div id ="free-key" class ="piano-keys">
+      <img src="images/key2.png" alt="piano key 2">
+    </div>
+
+<!--free jazz text-->
+    <div id="free-text" class="text">
+      <div id="free-info" class="info">
+        <h2>Free Jazz</h2>
+        <p>Also known as Avante-Garde Jazz, Free Jazz came into prominence in the late 1950s and early 60s as musicians began to tire of the fixed structure of Bebop. Free Jazz is characterized by its dissmissal of traditional jazz framework, such as the twelve-bar blues, in favor of more improvisation. Pioneers of this genre include Pharoah Sanders, the great John Coltrane, Charles Mingus, and Eric Dolphy.</p>
+      </div>
+<!--free jazz audio-->
+      <audio id="music9" preload="auto">
+        <source src="audio/free/john_coltrane.mp3" type="audio/mp3">
+        <source src="audio/free/john_coltrane.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="john_coltrane-audio" class="audio">
+        <h3>John Coltrane - Ascension</h3>
+        <button id="pButton9" class="play"><img id="icon9" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+
+      <audio id="music10" preload="auto">
+        <source src="audio/free/charles_mingus.mp3" type="audio/mp3">
+        <source src="audio/free/charles_minugs.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="charles_mingus-audio" class="audio">
+        <h3>Charles Mingus - Pithecanthropus Erectus</h3>
+        <button id="pButton10" class="play"><img id="icon10" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+<!--free album covers-->
+      <div class="album-cover" id="john_coltrane-cover">
+        <img src="images/free/john_coltrane.jpg" alt="John Coltrane Cover">
+      </div>
+      <div class="album-cover" id="charles_mingus-cover">
+        <img src="images/free/charles_mingus.jpg" alt="Charles Mingus Cover">
+      </div>
+<!--free text closing div-->
+    </div>
+<!--free buttons-->
+    <div class="button">
+        <button id="hide5" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--free closing div-->
+  </div>
+
+
+
+<!--fusion jazz-->
+  <div id="fusion" class="shape">
+    <div id ="fusion-key" class ="piano-keys">
+      <img src="images/key2.png" alt="piano key 2">
+    </div>
+
+<!--fusion jazz text-->
+    <div id="fusion-text" class="text">
+      <div id="fusion-info" class="info">
+        <h2>Jazz Fusion</h2>
+        <p>Jazz Fusion, also known as "jazz rock" takes the classic elements of jazz and mixes them with electric intruments suchs as electric guitars and keyboards. Fusion came to prominence in the late 1960s with innovations from the likes of Miles Davis, who on his seminal fusion album <em>Bitches Brew</em>, began incorporating more electronic elements and even played his trumpet though electronic effect pedals. This style was a favorite of Herbie Hancock, Weather Report, and Miles Davis in his later years.</p>
+      </div>
+<!--fusion jazz audio-->
+      <audio id="music11" preload="auto">
+        <source src="audio/fusion/miles_davis2.mp3" type="audio/mp3">
+        <source src="audio/fusion/miles_davis2.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="miles_davis2-audio" class="audio">
+        <h3>Miles Davis - Bitches Brew</h3>
+        <button id="pButton11" class="play"><img id="icon11" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+
+      <audio id="music12" preload="auto">
+        <source src="audio/fusion/weather_report.mp3" type="audio/mp3">
+        <source src="audio/fusion/weather_report.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="weather_report-audio" class="audio">
+        <h3>Weather Report - Teen Town</h3>
+        <button id="pButton12" class="play"><img id="icon12" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+<!--fusion album covers-->
+      <div class="album-cover" id="miles_davis2-cover">
+        <img src="images/fusion/miles_davis2.jpeg" alt="Miles Davis 2 Cover">
+      </div>
+      <div class="album-cover" id="weather_report-cover">
+        <img src="images/fusion/weather_report.jpg" alt="Weather Report Cover">
+      </div>
+<!--fusion text closing div-->
+    </div>
+<!--fusion buttons-->
+    <div class="button">
+        <button id="hide6" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--fusion closing div-->
+  </div>
+
+
+
+<!--latin jazz-->
+  <div id="latin" class="shape">
+      <div id ="latin-key" class ="piano-keys">
+        <img src="images/key3.png" alt="piano key 3">
+      </div>
+
+<!--latin jazz text-->
+    <div id="latin-text" class="text">
+      <div id="latin-info" class="info">
+        <h2>Latin Jazz</h2>
+        <p>Latin Jazz is comprised of two main styles <em>Afro-Cuban Jazz</em> and <em>Bossa Nova</em>. The former is denoted by its Cuban dance inspired use of claves, congas, and bongos; and was popularized in the 1940s by Mario Bauza and Machito. The latter draws from Brazilian samba culture and is epitomized in Stan Getz and Joao Gilberto's <em>The Girl from Impanema</em>.</p>
+      </div>
+<!--latin jazz audio-->
+      <audio id="music13" preload="auto">
+        <source src="audio/latin/mario_bauza.mp3" type="audio/mp3">
+        <source src="audio/latin/mario_bauza.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="mario_bauza-audio" class="audio">
+        <h3>Mario Bauza & His Afro-Cuban Jazz Orchestra - Asi No, Papa</h3>
+        <button id="pButton13" class="play"><img id="icon13" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+
+      <audio id="music14" preload="auto">
+        <source src="audio/latin/stan_getz.mp3" type="audio/mp3">
+        <source src="audio/latin/stan_getz.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="stan_getz-audio" class="audio">
+        <h3>Stan Getz/Joao Gilberto - The Girl From Impanema</h3>
+        <button id="pButton14" class="play"><img id="icon14" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+<!--latin album covers-->
+      <div class="album-cover" id="mario_bauza-cover">
+        <img src="images/latin/mario_bauza.jpg" alt="Mario Bauza & His Afro-Cuban Jazz Orchestra Cover">
+      </div>
+      <div class="album-cover" id="stan_getz-cover">
+        <img src="images/latin/stan_getz.jpg" alt="Stan Getz Cover">
+      </div>
+<!--latin text closing div-->
+    </div>
+<!--latin buttons-->
+    <div class="button">
+        <button id="hide7" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--latin closing div-->
+  </div>
+
+
+
+<!--smooth jazz-->
+  <div id="smooth" class="shape">
+    <div id ="smooth-key" class ="piano-keys">
+      <img src="images/key1.png" alt="piano key 1">
+    </div>
+
+<!--smooth jazz text-->
+    <div id="smooth-text" class="text">
+      <div id="smooth-info" class="info">
+        <h2>Smooth Jazz</h2>
+        <p>Arising in the late 1970s and early 1980s, this easy listening style of jazz combines elements of fusion with popular music. Lead by musicians such as Kenny G, Grover Washington, and Chuck Mangione, smooth jazz often recevies criticism for not being as technical as other forms of jazz. Despite this, smooth jazz was a huge commercial success, with Kenny G becoming one of the best-selling musicians of all time.</p>
+      </div>
+<!--smooth jazz audio-->
+      <audio id="music15" preload="auto">
+        <source src="audio/smooth/grover_washington.mp3" type="audio/mp3">
+        <source src="audio/smooth/grover_washington.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="grover_washington-audio" class="audio">
+        <h3>Grover Washington Jr. - Mister Magic</h3>
+        <button id="pButton15" class="play"><img id="icon15" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+
+      <audio id="music16" preload="auto">
+        <source src="audio/smooth/kenny_g.mp3" type="audio/mp3">
+        <source src="audio/smooth/kenny_g.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="kenny_g-audio" class="audio">
+        <h3>Kenny G - Songbird</h3>
+        <button id="pButton16" class="play"><img id="icon16" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+<!--smooth album covers-->
+      <div class="album-cover" id="grover_washington-cover">
+        <img src="images/smooth/grover_washington.jpeg" alt="Grover Washington Jr. Cover">
+      </div>
+      <div class="album-cover" id="kenny_g-cover">
+        <img src="images/smooth/kenny_g.jpg" alt="Kenny G Cover">
+      </div>
+<!--smooth text closing div-->
+    </div>
+<!--smooth buttons-->
+    <div class="button">
+        <button id="hide8" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--smooth closing div-->
+  </div>
+
+
+
+<!--acid jazz-->
+  <div id="acid" class="shape">
+    <div id ="acid-key" class ="piano-keys">
+      <img src="images/key3.png" alt="piano key 3">
+    </div>
+
+<!--acid jazz text-->
+    <div id="acid-text" class="text">
+      <div id="acid-info" class="info">
+        <h2>Acid Jazz</h2>
+        <p>This style of jazz was developed in the London club scene during the 1980s. Acid Jazz takes elements from soul, funk, and disco and often features sampling. With an emphasis on the percussion, the main goal of Acid Jazz, like Swing, is to get audiences dancing. Some of the biggest bands to embrace this genre include Jamiroquai, Us3, and A Tribe Called Quest. </p>
+      </div>
+<!--acid jazz audio-->
+      <audio id="music17" preload="auto">
+        <source src="audio/acid/jamiroquai.mp3" type="audio/mp3">
+        <source src="audio/acid/jamiroquai.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="jamiroquai-audio" class="audio">
+        <h3>Jamiroquai - Virtual Insanity</h3>
+        <button id="pButton17" class="play"><img id="icon17" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+
+      <audio id="music18" preload="auto">
+        <source src="audio/acid/us3.mp3" type="audio/mp3">
+        <source src="audio/acid/us3.ogg" type="audio/ogg">
+      </audio>
+
+      <div id ="us3-audio" class="audio">
+        <h3>Us3 - Cantaloop (Flip Fantasia)</h3>
+        <button id="pButton18" class="play"><img id="icon18" class="icon" src="images/play.png" alt="play"></button>
+      </div>
+<!--acid album covers-->
+      <div class="album-cover" id="jamiroquai-cover">
+        <img src="images/acid/jamiroquai.jpg" alt="Jamiroquai">
+      </div>
+      <div class="album-cover" id="us3-cover">
+        <img src="images/acid/us3.jpg" alt="Us3 Cover">
+      </div>
+<!--acid text closing div-->
+    </div>
+<!--acid buttons-->
+    <div class="button">
+        <button id="hide9" class="hide"><img src="images/arrow.png" alt="hide"></button>
+    </div>
+<!--acid closing div-->
+  </div>
+
 
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/audio.js"></script>
 
 </body>
 </html>
